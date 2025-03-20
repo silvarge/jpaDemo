@@ -20,16 +20,16 @@ spring:
   #    password: ENC(DET7+SRjKW3/5Mbyh1aUNV2l4w7pwpog7yBMdRtCk1c0mZs805g8Zd6hNEhJgnrR)
 
   jpa:
-    show-sql: true
     hibernate:
       ddl-auto: update
     database: postgresql
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
-  lifecycle:
-    timeout-per-shutdown-phase: 10s
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        cache:
+          use_second_level_cache: false
+      open-in-view: false
 
 # swagger
 springdoc:
