@@ -20,10 +20,10 @@ spring:
   #    password: ENC(DET7+SRjKW3/5Mbyh1aUNV2l4w7pwpog7yBMdRtCk1c0mZs805g8Zd6hNEhJgnrR)
 
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
     hibernate:
       ddl-auto: update
+    database: postgresql
   h2:
     console:
       enabled: true
