@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 리스트</title>
+</head>
+<body>
+    <h1>게시물 리스트</h1>
+    <div th:each="article : ${articles}">
+        <p>제목: <span th:text="${article.title}"></span></p>
+        <p>내용: <span th:text="${article.content}"></span></p>
+    </div>
+</body>
+</html>
