@@ -1,12 +1,11 @@
 spring:
-#  config:
-#    activate:
-#      on-profile: dev
   application:
     name: jpaDemo
 
   datasource:
-    url: ${DATABASE_URL}
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
   #    url: jdbc:h2:mem:testdb
 #    driver-class-name: org.h2.Driver
@@ -22,12 +21,6 @@ spring:
       ddl-auto: update
     database: postgresql
     show-sql: true
-    properties:
-      hibernate:
-        format_sql: false
-        cache:
-          use_second_level_cache: false
-      open-in-view: false
 
 # swagger
 springdoc:
