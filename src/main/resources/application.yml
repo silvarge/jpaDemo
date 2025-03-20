@@ -28,11 +28,11 @@ springdoc:
   swagger-ui:
     operations-sorter: alpha
     tags-sorter: alpha
+    path: /swagger-ui
     display-request-duration: true
     doc-expansion: none
     filter: true
     show-extensions: true
-    url: "https://jpademo-production.up.railway.app/v3/api-docs"
 
 #jasypt:
 #  encryptor:
